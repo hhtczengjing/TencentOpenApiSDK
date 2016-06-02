@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "TencentOpenApiSDK"
-  s.version             = "3.1.0"
+  s.version             = "3.1.0.1"
   s.summary             = "The Official iOS SDK of Tencent Open API."
   s.homepage            = "http://wiki.open.qq.com"
   s.license             = {
@@ -23,7 +23,6 @@ Pod::Spec.new do |s|
 
   s.subspec "Full" do |full|
     full.vendored_frameworks = 'full/TencentOpenAPI.framework'
-    full.source_files = 'full/TencentOpenAPI.framework/Headers/**/*.h'
     full.resource_bundles    = {
       'TencentOpenAPI' => ['full/TencentOpenApi_IOS_Bundle.bundle']
     }
@@ -31,7 +30,6 @@ Pod::Spec.new do |s|
 
   s.subspec "Lite" do |lite|
     lite.vendored_frameworks = 'lite/TencentOpenAPI.framework'
-    lite.source_files = 'lite/TencentOpenAPI.framework/Headers/**/*.h'
   end
 
 end
